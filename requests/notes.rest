@@ -1,0 +1,30 @@
+# @no-log
+GET http://localhost:3001/notes
+
+###
+# @no-log
+GET http://localhost:3001/notes/1
+
+###
+# @no-log
+DELETE http://localhost:3001/notes/2
+
+###
+# @no-log
+POST http://localhost:3001/notes
+Content-Type: application/json
+
+{
+  "title": "Nota 1",
+  "content": "Contenido de la nota 1"
+}
+
+###
+# @no-log
+PUT http://localhost:3001/notes/1
+Content-Type: application/json
+
+{
+  "title": "Nota Modificada",
+  "content": "Contenido de la nota modificada"
+}
