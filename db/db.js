@@ -6,8 +6,8 @@ const dropTableQuery = `DROP TABLE IF EXISTS notas`;
 const createTableQuery = `
     CREATE TABLE notas
     (
-        id        INTEGER PRIMARY KEY,
-        title    TEXT,
+        id      INTEGER PRIMARY KEY,
+        title   TEXT,
         content TEXT
     );
 `;
